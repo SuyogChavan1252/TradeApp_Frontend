@@ -290,7 +290,7 @@ const Login = () => {
           
           handleSuccess(message);
           setTimeout(() => {
-            window.location.href = "http://localhost:3000/"; // Full-page redirect
+            window.location.href = `${process.env.REACT_APP_DASHBOARD_URL}`; // Full-page redirect
           }, 1000);
         } else {
           handleError(message);
