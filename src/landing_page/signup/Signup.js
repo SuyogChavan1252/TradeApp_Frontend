@@ -213,7 +213,7 @@ const Signup = () => {
         if (success) {
           handleSuccess(message);
           setTimeout(() => {
-            window.location.href = `${process.env.REACT_APP_DASHBOARD_URL}/login`; // Full-page redirect
+            window.location.href = `${process.env.REACT_APP_FRONTEND_URL}/login`; // Full-page redirect
           }, 2000);
         } else {
           handleError(message);
